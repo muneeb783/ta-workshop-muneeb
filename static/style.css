@@ -1,5 +1,6 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
     display: flex;
@@ -12,7 +13,7 @@ body {
     background: white;
     padding: 20px 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
 }
@@ -56,14 +57,27 @@ ul {
 
 li {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
     padding: 10px;
     border-bottom: 1px solid #eee;
 }
 
 li:last-child {
     border-bottom: none;
+}
+
+.task-checkbox {
+    flex: 0 0 auto;
+}
+
+.task-title {
+    flex: 1;
+}
+
+.task-title.completed {
+    text-decoration: line-through;
+    color: #777;
 }
 
 .delete-btn {
